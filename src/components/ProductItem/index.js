@@ -13,7 +13,7 @@ const ProductItem = ({image,price,title,id,navigation}) => {
   return(
   <Container onPress={()=>openDetails(id)} >
       <ImageProduct       
-      resizeMode="cover"
+      resizeMode="contain"
       source={{uri:image}}/>
       <TextTitle>{title}</TextTitle>
       <TextPrice>R$ {price.toFixed(2)}</TextPrice>

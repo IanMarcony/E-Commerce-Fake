@@ -40,6 +40,7 @@ const CartItem = ({id,quantity}) => {
   return( 
   <Container >
     <ImageProduct
+    resizeMode="contain"
       source={{uri:product.image}}/>
     <AboutArea>
       <TitleArea>

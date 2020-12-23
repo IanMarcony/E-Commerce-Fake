@@ -43,11 +43,12 @@ const MoreInformation = ({navigation}) => {
         <ScrollView>
           <ContainerImage>
           <ImageProduct 
+          resizeMode="contain"
           source={{uri:product.image}}
           />
 
           <TextTitle>{product.title}</TextTitle>
-          <TextPrice>R$ {product.price}</TextPrice>
+          <TextPrice>R$ {product.price.toFixed(2)}</TextPrice>
           </ContainerImage>
           <TextHeaderDescription>Descrição</TextHeaderDescription>
 
